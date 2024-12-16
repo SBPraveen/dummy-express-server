@@ -10,7 +10,7 @@ app.get("/", async (req, res) => {
   const response = await axios.get(
     "http://54.174.203.102"
   );
-  res.json(response.data);
+  res.json("This is the child and the response from the parent is:"+response.data);
 });
 
 // Start the server
